@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <title>First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Recep Celik">
+    <meta name="description" content="This page contains all the things I'm learning how to create as I learn HTML.">
+    <link rel="icon" href="html5-logo-750x440.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+
+<body>
+    <h1>Hello World!</h1>
+    <hr>
+    <h2>I'm ready to learn HTML!!</h2>
+    <p>This is my first web page.</p>
+    <h3>My Daily Schedule</h3>
+    <p>Let me tel you how i: <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;...learn more about web dev.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;...plan out my schedule.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;...use resources from <abbr title="Mozilla Developer Network">MDN</abbr>.
+    </p>
+    <hr>
+    <h2>I'm Also Planning a Vacation</h2>
+    <p><em>I've been working hard and really need a getaway :(</em><br>
+       I live in <abbr title="Kansas">KS</abbr> so I want visit a beach. 
+    </p>
+    <h3>Place I'd Like to Visit</h3>
+    <p>California <br>
+       San Mateo <br>
+       .<br>
+       .<br>
+       . 
+    </p>
+    <h3>Place I Want to Avoid</h3>
+    <p><strong>Anywhere cold. No way!</strong></p>
+    <hr>
+    &lt;&lt;&lt; &copy; Recep Celik &gt;&gt;&gt;
+</body>
+
+</html>
+
+<!--
+    *Bu bölümde öğrendiğimiz ilk şeylerden biri <hr> oldu. Element mi değil mi bilmiyorum ama sayfada bir üstteki yazılan text
+    ile tek satır boşluk bırakıyor sayfa boyunca bir çizgi çekiyor ve sonra yine bir satır boşluk bırakıyor bu defa alt kısma.
+   
+    *Öğrendiğimzi bir diğer text elementi ise <br> oldu. Html dilinde bir elementin içine başka elementler koyabiliriz. <p> elementinin
+    içine bu <br> elementini koyduğumuzda bir satır boşluk bırakarak aşağı atıcaktır texti. Ayrıca html dilinde metin yazarak boşluk 
+    veya satıra atlatmak istediğimizde C dilinde printf fonksiyonuna yazdığımız metine boşluk bıraktığımız gibi boşluk bırakarak 
+    yapamayız tüm boşlukları geri alıcaktır dil buna white space collapse denmektedir.
+
+-->
+
+<!--         
+        
+**Block Level Elements                                 
+    *Tüm yeni başlık ve paragraf elementlerinin yeni bir satır ile başladığı elementler. Bu tabiki de ileride CSS ile şekillendirilebilir.
+    
+    *Headings or paragraphs asla aynı satırda durmazlar yeni bir satır oluşturmadan.
+
+
+
+
+**Inline Elements
+    Inline elementler ile tam tersi aynı satırda durabilir bunlar. Hadi bi kaç tanesine bakalım.
+
+    *inline elementlerden biri de emphasize kısaltılması olan <em> </em> elementidir. Bu element vurgu yapmakta kullanılır.
+    p elementinin içine yazdığımız metinde Ben elma severim ama <em> armut sevmem </em> şeklinde yazdığımız metinde Ben elma severim
+    ama kısmına kadar normal şekilde ekrana basılıcakken em elementi arasına aldığımız armut sevmem kısma vurgulu şekilde ekrana bastı-
+    rılacaktır.
+
+    *Bir diğer inline element ise strong tur. <strong> </strong> emphasize ın daha güçlü versiyonudur.
+
+    *Bu inline elementlerin olayı bunları p veya h elementleri içinde kullanıdığımızda metinde bir alt satıra atlatma veya boşluk oluş
+    turma gibi şeylerde bulunmazlar bu yüzden inline element denir.
+
+**Bir diğer konu ise HTML entities. Sanırım html nin doğasına aykırı şekilde eklemeler yapabilmemize olanak sağlayan yapılar.
+    bunlardan biri &nbsp; dir. Bunu h ve p elementleri içindeki metine ekleyecek olursak bir karakter boşluk bırakacaktır.
+
+    *bir diğer müq inline elementlerden biri ise abbreviation kelimesinin kısaltması olan abbr elementidir. Gördüğüm en güzel inline 
+    elementi olabilir çünkü metine eklediğimiz bir kısaltmanın açılımın kullanıcı tarafından imleç kısaltmaya götürülmek sureti ile
+    okunabilmesini sağlar. Zaten abbreviation kelimesinin türkçesi kısaltma anlamına gelmektedir. Kullanımı şu şekildedir
+
+    <abbr title="Buraya kullandığımız kısaltmanın açılımını yazacağız"> BURAYA KISALTMAYI </abbr> kullanım bu şekil hemen bi örnek
+
+    <abbr title="Mozilla Developer Network">MDN</abbr>.
+
+    *Diğer elemntimiz adress elementidir. Genellikle bir lokasyonu ve adresi yazarken kullanırız. Kullanımız şu şekildedir
+
+    <adress> 
+        Türkiye <br>
+        Muğla <br>
+        Bodrum 48000 <br>
+    </adress>
+
+    tarayıcı bunun bir lokasyon adresi olduğunu anlayacak ve şöyle yazıcaktır sitede
+
+    Türkiye, Muğla, Bodrum 48000
+-->
