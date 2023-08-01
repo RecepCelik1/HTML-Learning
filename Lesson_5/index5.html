@@ -21,7 +21,7 @@
     <ol>
         <li>...learn more about web dev.</li>
         <li>...plan out my schedule.</li>
-        <li>...use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/en-US/">MDN</a>
+        <li>...use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org">MDN</a>
         </abbr>.</li>
         </ol>    
     <hr>
@@ -62,7 +62,20 @@
     web sitelerimizi birbirine bağlar. Html de bu hypertexttir. Daha önceleri kullandığımız link ele-
     menti ile karıştırmamak lazım link elementi sadece dışarıdan html dosyamıza datalar eklememizi sağlar. 
     
-    *Bu işi yapan element ise 
+    *Bu işi yapan element ise <a></a> hemen yan tarafa yazdığım elementtir açılımı anchor tag dir hadi kullanımını detaylandıralım. 
+    Tahmin edileceği üzere a elementlerinin arasına alıcağımız text bizim bağlantımızı içericektir. Bu a elementleri ile sizin 
+    hostladığınız sunucudan tamamen farklı bir sunucu tarafından işletilen web sitesine de aktarma yapabilirsiniz veya kendi sunucunuz 
+    içinde başka bir adrese aktarma yapablirsiniz. Farklı bir hosttaki web sitesine aktarma yaparken target sayfanın web adresini 
+    eksiksiz yazmalısnız a elementinin içine kendi sunucunuzdaki farklı bir web sitesine aktarırken de aynı metodu kullanabilirsiniz 
+    ama bunun çok daha verimli ve hızlı bir yolu var. Kendi sunucu içinizde aktarma yapmak istediğinizde target web sayfasının html 
+    kodu zaten sizin local areanızda mevcuttur. a elementini direk local area dan o html dosyasını çağıracak şekilde ayarlayabilirsiniz 
+    bu çok daha verimli olacaktır.
+
+    *şimdi güzelce tanımladığımıza göre a elementini kullanmayı yakından inceleyelim.
+
+    <a href="target"> Recep Celik</a>        ==> aynen yanda gösterilidiği şekilde kullanılır önce a elementinin opening etiketini 
+    açarız içine href ile hedefi tanımlar target yazan yere hedef web sitesi veya bizim local html dosyasının adresini/adını yazarız
+    opening etiketi biter daha sonra bizim yazdığımız hedefe yönlendirecek buton olan metni yazarız ve kapatırız. 
 
 
 
