@@ -1,160 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
     <head>
         <meta charset="UTF-8">
+        <meta name="author" content="Recep Celik">
+        <meta name="description" content="This page contains all the things I'm learning how to create as I learn HTML.">
+        <link rel="icon" href="html5-logo-750x440.png" type="image/x-icon">
+        <link rel="stylesheet" href="main2.css" type="text/css">
         <title>My First Web Page</title>
-        <style>
-            html {
-                font-size: 22px
-            }
-    
-            body {
-                background-color: #333;
-                color: whitesmoke;
-            }
-        </style>
     </head>
 
     <body>
         <h1>Hello World!</h1> 
         <p>This is my first web page.</p>
     </body>
-
+    
 </html>
 
-<!-- BU HTML COMMENT SATIRIDIR -->
+<!--Bu gün head kısmımıza genel bi kaç metadata daha ekliyelim ve bu eklediklerimizin ne işe yaradığını teker teker irdeleyelim-->
 
-<!-- index.html her zaman bir web sitesini başlatması beklenen dosyanın adıdır C dilindeki main fonksiyonu ile benzer özellikler 
-gösterir. Aynı zamanda dosyalar isimlendirilirken her zaman küçük harfli ve boşluksuz olarak isimlendiririz. Alt tire kullanılabilir.
-Bu kuralların sebebi dosyaları web serverine yüklerken web serveri pek çok kez farklılaştıracaktır ve bu da sorunlara sebep olabilir
-Özetle küçük harf, boşluk yok, _ kullanabilirsin ve her dosyayı .html uzantısı ile bitir. 
+<!--
+    aşağıda metadata olan name metadatasını görüyoruz.
+
+    <meta name="author" content="Recep Celik">
+    <meta name="description" content="This page contains all the things I'm learning how to create as I learn HTML.">
+
+    *bu metadatayı html dökümanımız hakkında bilgi verirken kullandık. önce meta yazarak bir metadata tanımladık daha sonrasında da name
+    yazarak bu metadatanın türünün name olduğunu tanımladık. 
+
+    *name yazdıktan sonraki tırnak işaretlerinin içine yazdıklarımız tanımladığımız name metadatasının ne hakkında bilgi içerdiğini diğer geliştiricilerin anlayabilmesini sağlar spesifik olarak programa komut vermezler düz bir texten ibarettirler. 
+    Ayriyeten bu tırnak içine yazdığımız etiket daha sonrasında kullanıcıya vericeğimiz bilgiler ile ilişkili olmalıdır. Örneğin 
+    yukarıda name metadatasının author etiketi olduğunu yazarak bu metadatanın html dosyasını yazanın ismini içerdiğini bildirmiş 
+    oluyoruz. Tıpkı C dilinde fonksiyonları isimlendirirken yaptığımız gibi. İyi bir kod başka geliştiriciler tarafından kolayca 
+    anlaşılabilmelidir.
+
 -->
-
-<!--C dili fonksiyonlardan oluşuyordu sanırım html de ise bunun yerine element olarak adlandırılan yapılar bulunmaktadır. Öğreniceğimiz
-ilk element html elementidir galiba C dilindeki main fonksiyonu oluyor bu aşağıda öğrenelim-->
-
-    <!-- Bütün elementler bir opening etiketi ve closing etiketinden oluşur. html elementi için örnek vericek olursak 
-    
-                    <html>  html elementi için bu açılış etiketi
-                    </html> bu ise kapanış etiketidir.    
-    -->
-
-
-<!--yazdığımız her html projesi html elementi ile başlayıp bitmek zorundadır. Algoritma derslerini hatırla her programın başlangıcı
-ve bitişi olmalıdır. Tahmin ediyorum ki html dünyasıda bu kurala uyuyordur, başlatıcı ve bitirici olarakta html elementi kullanılıyor-->
 
 <!--
 
+    Bir diğer elementimiz ise link elementidir. Aşağıda inceleyelim.
 
-<html>
+    <link rel="icon" href="html5-logo-750x440.png" type="image/x-icon">
 
-</html>
+    *link elementi html belgemiz ile harici kaynak arasındaki ilişkiyi tanımlar. Head bölümünde herhangi bir yerde tanımlanabilir. Link 
+    elementinin içinde kullandığımız bazı özellikler vardır hadi teker teker bakalım.
+
+    *rel = Relation kelimesinden gelmektedir, html belgemize eklenicek harici dosyanın türünü belirtir. Resim eklediğimiz için tırnak 
+    işaretleri arasına icon yazarak resim ekliyeceğimizi belirttik.
+
+    *href = ekleyeceğimiz harici belgenin ismini belirtir. ismi tam olarak yazmamız gerekir programın dosyayı bulabilmesi için.
+
+    *type = harici dosyanın web sayfasında nerede açılacağını belirtir. 
+
+    Kabaca bu şekilde şimdi bi kaç detay ekleyelim.
+
+    *hreflang = Eğer ekleyeceğimiz harici resim html belgemiz ile aynı dizinde değilse html belgesi resmi göremez bunun için resmin tam 
+    adresini belirtmemizi sağlar böylece html belgemiz resmi bulabilecektir.
+
+    *media = web sitemizde aktarma yapan bir buton eklediğimizde aktarma yapılacak sitenin web adresini belirtir.
+
+    *şimdi bi kaç rel türü ekleyelim
+
+            alternate
+            archives
+            author
+            bookmark
+            external
+            first
+            help
+            icon
+            last
+            license
+            next
+            nofollow
+            noreferrer
+            pingback
+            prefetch
+            prev
+            search
+            sidebar
+            stylesheet
+            tag
+            up
+
+                şimdilik böyle dursunlar zamanla hepsini detaylıca öğreneceğiz.
 
 
--->
 
-<!--html sayfaları iki ana bölümden oluşur. Bir tanesi son kullanıcının görmediği, sayfa ile ilgili dataları veya metadataları içeren
-kısım bu kısmın adı head kısmıdır ve head elementi ile oluşuturulur.Daha sonra oluşan bu alanın içine sayfa ile ilgili metadatalar
-yazılır            <head> </head>          
+    Link elementini ayrıca stil sayfalarının (CSS) ve hatta js dosyalarının ve daha pek çok dosyanın belgemize eklenmesinde 
+    kullanabiliriz. Yukarıdaki kod dizininde bu özelliği kullandık hadi yakından inceleyelim.      
 
--->
+    <link rel="stylesheet" href="main.css" type="text/css">
 
-
-<!--Son kullanıcının gördüğü element kısmı body elementidir.          <body> <!body>         -->
-
-<!--
-
-
-<html>
-    <head>
+    *önce link elementini yazarak belgeye bir şey iliştiriceğimi belirttim, rel yazıp "" içine stylesheet yazarak bir CSS dosyası 
+    ekleyeceğimi belirttim, href ve yine tırnak işareti içine CSS dosyamın adını belirttim daha sonrada type yazarak bu iliştirdiğim 
+    CSS dosyasının web sitesinde nerede kullanılacağını belirttim. Son kısım CSS dosyası tanımlarken elzem değildir çünkü CSS sadece 
+    tek bir yerde bulunabilir yani son kısmı yazmasakta derleyici nerede kullanıcağını biliyor olacaktır. 
     
-    </head>
-
-    <body>
-        
-    </body>
-
-</html>
-
-
 -->
-
-<!--Artık iki tane ana bölmemiz var. Bu günlük head kısmına sadece bir tane metadata koyalım ama ilerde envai çeşit metadata öğreneceğiz
-head kısmına ilk önce title yani başlık elementi ile girelim. Bu element html dökümanı içinde kalacaktır
---> 
-
-
-<!-- Bunun yanısıra birde body elementinin içine h1 elementini koyabiliriz. Başlık için kullanılır. Koyabiliceğimiz en büyük başlıktır.
- Her sayfaya sadece bir tane h1 elementi koyabiliriz ve sayfanın ne hakkında olduğunu söylemeli ayrıca title ile aynı metine sahip olmak 
-zorunda değil
--->
-
-
-
-
-<!--Bir diğer element ise p elementidir. Paragraph kelimseinin açılımıdır ve içine yazdığım metinler direkt olarak kullanıcıya 
-yansıtılır tıpkı C dilinde öğrendiğin printf fonksiyonu gibi. 
--->
-
-
-<!--live server adında bir uzantı yükledik bu uzantı sayesinde yazdığımız html satırının bir web sitesi olarak nasıl göründüğünü
-görebiliyoruz öğrendiğimiz şeyin ne işe yaradığını anında görebiliriz bu işleri epey zevkli kılıcak.
--->
-
-
-<!--yukarıdaki kodu çalıştırdığımızda ilk sayfaya koyduğumuz sayfa başlığı olan ve h1 elementinin içine yazdığımız "Hello World!" 
-büyük harfler ile karşımıza çıkıyor hemen altında "This is my first web page" yazıyor buda p elementinin içine yazdığımız metin parçası
--->
-
-
-<!--Veeee title elementinin içine yazdığımız "My First Web Page" ise yukarıda sekmeler menüsünde bizim sekmenin adı olarak gözüküyor-->
-
-
-<!-- Artık yukarıda yazdıklarımızın nerelerde karşımıza çıktığını biliyoruz hadi birde bütün web sayfasını karanlık moda
-geçirmeyi öğrenelim. Web sayfamızın görüntü, teması, yazı rengi vs. şeyleri ayarlamak için style elementini kullanırız. Buna sanırım
-CSS deniyor ve daha sonra öğrenecekmişiz.
--->
-
-
-<!--    head bölümünde title elementinin hemen altına şu satırları yazarsak
-
-    <style>
-        html {
-            font-size: 22px    ==> Bu kısım metin yazı boyutunu ayarlıyor adı üstünde font-size
-        }
-
-        body {
-            background-color: #333;
-            color: whitesmoke;
-        }
-    </style>
-
-    web sayfamızın teması karanlık, metinlerin rengi ise beyaz olacaktır.
--->
-
-
-<!-- Peki bir web sitesi oluşturduktan sonra sayfamızda hata olup olmadığını nerden anlayabiliriz ? Burda oyuna Validation Service dahil
-    oluyor. Bu işi yapan sitelerden biride W3C validation service sitesidir. Bu site World Wide Web sitelerinin kabul edilmiş
-    standartlara uygun olup olmadığını kontrol etmektedir.
-
--->
-
-<!-- Validation yaptıktan sonra bi kaç tane hata ile karşılaştık ve onları düzelttik. Bu hataları düzeltirken eklediğimiz bi kaç yeni
-    elementleri tanıyalım.
-
-    <!DOCTYPE html>   ==> Adı üstünde doctype yani döküman türü. Yazdığımız dökümanın hangi döküman türü olduğunu belirtir ben bu 
-                          dökümanı html kurallarına göre yazdığım için döküman türünün html olduğunu belirttim ve her dökümanda mutlaka 
-                          ilk önce bunu kullanmamız gerekir.
-
-    <html lang="en">   ==> Bu kısım html dökümanının dilini tanımlamakta kullanılır. Tırnak işaretleri içine dilin kısaltması yazılır.
-                           sanırım tam olarak element değildir çünkü closing etiket tarzı bir yapıya sahip değil.
-
-    <meta charset="UTF-8">  ==> Bu kısım html dökümanındaki verilerin nasıl şifreleneceğini belirler. Şifreleme türü yine tırnak 
-                                işaretleri arasında yazılır, başka charsetlerde mevcuttur ama Web sitelerinde standart olarak 
-                                UTF-8 charseti kullanılır çünkü utf-8 neredeyse bütün dillerdeki karakterleri içermektedir.
--->
-
-
-
-
-
