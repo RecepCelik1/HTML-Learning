@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="discription" content="This page is my html learning draft">
+        <meta name="author" content="Recep Celik">
+        <title>Html Working Draft</title>
+        <link rel="icon" href="html5-logo-750x440.png" type="image/x-icon">
+        <link rel="stylesheet" href="main6.css" type="text/css">
+    </head>
+
+    <body>
+        <figure>
+        <img src="img/cat-space.gif" alt="Cute Nyan Cat" title="learning at add image at html5"
+        width="220" height="220" loading="lazy">
+        <figcaption>
+        Nyan cat are best!
+        </figcaption>
+        </figure>
+
+        <hr>
+
+        <figure>
+            <figcaption> An example of HTML5 code </figcaption>
+            <p>
+                <code>&lt;h1&gt;Hello There!&lt;/h1&gt;</code>
+            </p>
+        </figure>
+    </body>
+
+</html>
+
+<!-- Bu günki konu başlığı web sayfamıza resimler eklemek üzerinedir. Web sayfamızda kullanıcağımız resimleri depolamak için önce bir
+    dosya oluşturmalıyız ve tabi kide bu dosya aynı dizinde bulunmalı.
+
+    *Bütün hikaye image tag ile başlıyor. image tagi p, h elementleri gibi kapatma etiketine ihtiyaç duymaz. Bu etiket şu şekilde 
+    kullanılır ;
+
+    <img src="" alt="" title="" width="" height=""> aynen yanda görüldüğü gibi. 
+    *src ile yazan yere resmin bulunduğu dosyayı/resmin tam adı olucak şekilde yazarız.
+    
+    *alt ile yazan yere ise olası bir hata ile olurda resim yüklenmez ise resimde ne olduğu ile ilgili kısa bilgi verilir.
+
+    *title kısmına yazdığımız şeyler ise web sayfasında resmin üzerine imleci getirdiğimizde resim ile ilgili bilgi çıkar onları 
+    yazarız bu kısıma.
+
+    width = en    height= yükseklik     resimde yazan değerlerin girilmesi tavsiye edilir büyütmek pek tavsiye edilmez ama büyütmek
+    veya küçültme durumlarında resmin oranları korunmalıdır. ilk yazan değer width, ikinci yazan değer height oluyor.
+
+    **web sayfalarında şöyle bi olay var sayfanın alt veya üst kısımlarında kalan ve o esnada görünmeyen bölümlere "fold" denir.
+    Şu an anlatıcağım img elementinin diğer bir attribute özelliği ile ilişkisi olucak bunun.
+    
+    * "loading" attribute. Bu özellik şuna yarıyor wes sayfası yüklendiğinde o anda ekranda görünmese bile tarayıcı tarafından indiril-
+    sin mi yoksa sadece safyada o resmin bulunduğu kısıma yaklaşınca mı indirilsin. 
+    
+    ==> Bu attribute default olarak "eager" değerine eşittir ve web sayfası yüklenir yüklenmez o esnada ekranda gözükmese bile tarayıcı 
+    bu resmi indiricektir.
+    
+    ==> Eşit olabileceği bir diğer value ise "lazy" dir. Bu da sadece resmin olduğu kısıma yaklaşınca resmi indirecektir.
+    *Bu özellik sayfamızın daha hızlı yüklenmesini, daha hızlı çalışmasını ve son kullanıcı tarafından daha hızlı kullanılabilmesini sağ-
+    lar. Özelliklede çok fazla fotoğraftan oluşan bir sayfanı varsa.
+
+    **Şimdi resmimiz ile ilişkili olucak şekilde text girmeyi öğrenelim. Bu işi figure elementi yapmaktadır ve tabi element olduğu için
+    opening ve closing taglerine sahiptir. Bu etiketleri açtıktan sonra altına fotoğrafı eklememizi sağlayan img etiketi ve fotoğraf 
+    ile ilişkili olucak olan texti yazmak içinde yeni bir element kullanırız. Bu elementin adı figcaption dır.(element olduğu için
+    tabi kide openin-closing tag :) .) figcaption elementleri arasına doğrudan metini yazabiliriz ve bu artık tarayıcılar ve daha 
+    pek çok motor tarafından bir olarak alınır. Hangisinin önce görünüceğini belirlemek içinde ilk hangisi görüntülensin istiyorsak 
+    onu yazarız basit mantık.
+
+    <figure>
+
+        <img src="img/cat-space.gif" alt="Cute Nyan Cat" title="i love cats"
+                width="220" height="220" loading="lazy">
+        
+        <figcaption>
+            Nyan Cat are best.
+        </figcaption>
+    </figure>
+
+    **Hadi birde normalde html editörümüzün özel komut, kod olarak algılayacağı şeyi metinde nasıl gösteririz onu öğrenelim.
+    normalde p elementi içine düz bir text olarak <h1> ama editör bunu hemen komut olarak algılayacak ve metine çıkmayacaktır.
+    Yukarıda gördüğümüz figure elementinin tek kullanım alanı resimler için değildir. Birde bu bahsettiğim mevzuda kullanılır.
+
+        <figure>
+            <figcaption> An example of HTML5 code </figcaption>
+            <p>
+                <code></code>
+            </p>
+        </figure>
+
+    
+    birde bu işte yardımcı olması için code elementi kullanılır bu element kodları text olarak görüntülemekte yardımcı olur. ama yinede
+    tek başına yeterli değildir.
+
+        <code>&lt;h1&gt;Hello There!&lt;/h1&gt; </code> bu şekilde birde html entities özelliklerini kullanarak kodumuzu düz bir text
+        olarak ekrana bastırabiliriz.
+-->
