@@ -11,7 +11,47 @@
         </head> 
 
         <body>
-            
+            <header>
+                <!--Tittle section-->
+                <h1>This Lesson is About to Semantic Tags</h1>
+            </header>
+            <hr>
+            <main>
+                <!--This area is about to main area-->
+                <h2>This is our main area</h2>
+                <p>This lesson we'll learn to semantic organization</p>
+            </main>
+            <span>
+                span!
+            </span>
+            <span>
+                <br>
+                span
+                <p>Span!</p>
+            </span>
+            <div>
+                div!
+            </div>
+            <div>
+                <p>Div!</p>
+            </div>
+            <hr>
+            <footer>
+                <!--This area is about to footer section-->
+                <h3>This is our footer area</h3>
+                <p>We've learn semantic organization in HTML</p>
+            <aside>
+                <details>
+                    <summary>Guess the <mark>number of hours</mark> I code per day </summary>
+                        <p>I start at  <time datetime="08.00">8 am</time> and I write code for hours every morning</p>
+
+                </details>
+            </aside>
+
+            </footer>
+
+            <hr>
+            <code>&lt;&lt;&copy;Recep Celik&gt;&gt;</code>
         </body>
 
         <!--
@@ -22,9 +62,75 @@
             Her sayfada sadece bir tana ana başlık olan h1 olmalıdır. Bu semantic düzen hiyerarşisinin temelidir.
 
             html dosyalarını semantic düzene göre yazmamız bize bir web sayfasının farklı kısımlarını okuyup, oluşturup, düzenlerken çok yardımcı olur.
-            Kodu uzun bir aradan sonra incelerken neyin nerde olduğunu kolayca fark edebilir ve anlayabiliriz.
+            Kodu uzun bir aradan sonra bile incelerken neyin nerde olduğunu kolayca fark edebilir ve anlayabiliriz.
 
-            *Bu zamana kadar  zaten kullandığımız semantic elementlerinden biride nav elementidir. Bu element orada bir grup link olduğunu belirtir.
+            **Bu zamana kadar  zaten kullandığımız semantic elementlerinden biride nav elementidir. Bu element orada bir grup link olduğunu belirtir.
+
+            **Tam olarak semantic element olmasada semantic düzenlemede kullandığımız bir diğer element ise <hr> elementidir. Kullanıcıya
+            başlığın, dolayısıyla sayfanın gidişatının değiştiğini bildirmek için idealdir. Daha ilerde CSS öğrendikçe bu horizontal rule adlı elemntin nasıl görünüceğini değiştirebiliriz ve böylelikle minecraft biyomları gibi değilde daha yumuşak bir geçiş sağlayabiliriz.
+ 
+            Semantic html sayfamızı ekran okuyuculara ve diğer yardımcı teknolojilere daha erişilebilir kılır ve bu önemli bir noktadır.
+
+            **Hadi sayfamıza üç büyük bölge ekleyelim. Bunlardan ilki header elementidir. Sayfa içinde bir başlıktan, bir posttan veya başka bir konudan her neyse diğerine geçiş yapmaya ekosistem değişikliği adını vereceğim. Her ekosistem kendi headerına sahip olabilir yani bir sayfada birden fazla header elementi bulunabilir. Fakat headerları yerleştirirken
+            başlıklar arasındaki hiyerarşiye dikkat etmemiz gerekiyor. Yani header kısmını sayfanın en başında kullansak daha iyi olur.
+            Header elementi son kullanıcının gördüğü sayfada bir değişikliğe neden olmaz ama html kodunun içinde özel bir anlama sahip olur "Burası Heading veya Header Bölgesi" gibi. (Kodumuzun bedeninin başlangıcı burası, kafa bölgesi burada gibi anlamlara sahiptir bu kısım.)
+
+            **Semantic düzeni sağlamamıza yarayan bir diğer element ise <main> elementidir ve her sayfada yalnızca bir tane main elementi olabilir. Elementin adıda az çok sayfanın hangi bölgesinde kullanılması geretiğini anlatıyor. Sayfada ana içeriğin bulunduğu kısımları bu element ile sararız. (Web sayfamızın bedeni)
+
+            **bahsettiğimiz üç semantic elemntlerinden sonuncusu ise footer elementidir daha öncesinde de söylediğim gibi kelime anlamı
+            hangi bölgede kullanılıcağını açıklıyor zaten ve tıpkı header elementinde olduğu gibi bu elementtende bir sayfada birden fazla bulunabilir. 
+
+            **Bir sayfada birden fazla nav elementi kullanılabilir. Footer bölgesinde de kullanılabilir çünkü bildiğimiz üzere nav elementi sayfa içerisindeki section bölgelerine aktarma yapıyor ve bunu yazı sonunda "ayrıca bkz." gibi yapılarda kullanıcının ilgisini çekebilecek diğer sayfalarımızada yönlendirirken kullanabiliriz.
+
+            **Bir sayfa içinde birden fazla nav elementi kullandığımız durumlarda bu nav elementlerini etiketleyebiliriz. Böylece yardımcı teknolojiler hangi nav elementinin hangisi olduğunu bilebilir. Bunu opening nav elementinin parantez içine aria-label adı verilen bir yapı ile yapabiliriz.
+
+            <header>
+                <nav aria-label="primary-navigation">
+            </header>
+ 
+            <footer>
+                <nav aria-label="last-navigation"
+            </footer>
+
+            yukarıda görüldüğü gibi bir sayfada birden fazla nav kullandım isimlendirdiğim için yardımcı teknoloji (o her ne ise artık) bu nav elementlerini birbirine karıştırmayacaktır ve aynı zamanda dikkat edildiği üzere isimlendirmeyi rastgele yapmadım
+            (istesem yapabilirdim tabi hintli bir yazılımcı(!) olsaydım :) . ) böylece kod başkaları tarafından kolayca okunabilir.
+
+            **Section yerine kullanabileceğim bir diğer element ise <article> elementidir. İkiside aynı işlevi görür ve hangisini kullanırsak kullanalım validator kodumuza onay verecektir aralarındaki fark şudur ;
+
+                *section çok daha genel, kapsayıcı ve sayfa içerisinde ayrı bir websayfası gibi davranır.
+
+                *article ise çok daha özelleşmiş, wevsayfasının bir başlığı gibi davranır.
+
+            **Bu gün öğreneceğimiz bir diğer element ise <aside> elementidir. içindeki elemanlar main kısmındakiler kadar önemli değildir. Genel kullanım alanları şöyledir ; kaynak belirtme ya da son notlar, yorumlar, alıntılar, ek bilgiler ve bence en önemlisi içerikten bağımsız kenar alanı (sidebar) vs. vs. diye uzar gider.
+
+            **<details> elementi web sayfası içerisinde hemen yanında ok işareti bulunmak sureti ile interaktif bir yazı oluşturur. Kullanıcı bu yazıya tıkladığı zaman yazı açılıcak ve yazının altında bizim yazdığımız şeyler görünecektir hadi details elementi ile bağlantılı şeyler nasıl yazılır bakalım.
+
+                *<summary> elementi. details elementinin hemen altına yazarak onunla bağlantılı hale getiririz. summary etiketlerinin
+                arasına yazdığımız metin interaktif hale gelicek ve ona tıkladığımızda açılacaktır.
+                *summary etiketleri arasına textimizi yazdıktan sonra closing summary tag ile closing details tag elementleri arasına yazdığım şeyler o interaktif metin içerisinde gizlenecektir hadi bi örnekle daha iyi anlayalım.
+
+                    
+                    <details>
+                        <summary>Contact Us</summary>
+                            <ul>
+                                <li>WhatsApp</li>
+                                <li>Instagram</li>
+                            </ul>
+                    </details>
+                
+                yukarıdaki gibi yazdığımızda sayfamızda "Contact Us" olarak interaktif bir text çıkıcak ona tıkladığımızda açılarak aşağıya 
+                    *WhatsApp
+                    *Instagram
+                olarak metinler açılacaktır.
+            
+            **<mark> elementi : Mark elementleri arasına yazdığımız textler fosforlu şekilde çizilmiş olarak gözükür.
+
+            **<time> elementi : time elementi <time datetime=""> 6 am </time> olarak kullanırılır. Son kullanıcının gördüğü textte herhangi bir değişiklik yoktur ama html dosyamız içindeki anlamı güçlendirir ve tarayıcılar için bazı özel anlamları vardır kısaca orada zaman olduğunu bildiriyor.
+            
+            **div elementi : Div sayfanın her yerine yerleştirebileceğiniz bir bloktur. İçine her türlü içerik girilebilir. Divin asıl amacı sayfayı belirli bloklara bölerek içerik girişlerinin daha rahat yapılması, arka planların daha rahat atanması, özelliklerin daha rahat kullanılmasıdır. Basit olarak div aşağıda yer alan özellikler ile birlikte kullanılır ve bunlar genellikle bir stil sayfasında tutulur. Gördüğünüz sinir bozucu sayfaların ortalarında çıkan reklamlar, uyarı kutucukları, yazıların birbirinden ayrılması, sayfa yapıları üst kısım orta kısım alt kısım olarak genellikle bunların hepsi div etiketleriyle oluşturulur. Bu etiketin bir diğer özelliği tamamen kendine ait CSS ayarlarına sahip olabiliyor ve web sayfası içindeki minik bir web sayfası gibi davranıyor ana sayfadan farklı background-color ayarlarına vs sahip olabiliyor.
+
+            **span elementi : Div elementine benzemektedir. Span öğesi, genel olarak satır içi içeriğin bir bölümüne stil uygulamak için kullanılan genel bir satır içi öğesidir. Satır içi öğesi yeni bir satır başlatmaz ve sayfada yalnızca içeriği kadar yer kaplar fakat div elementi block line elementidir ve tüm satırı kapsar.Div’ler web düzeninde kullanılırken, span etiketi genelde tabloların yerini almaktadır.
+
+
         -->        
-
     </html>

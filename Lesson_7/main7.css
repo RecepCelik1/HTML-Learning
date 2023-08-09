@@ -20,3 +20,12 @@ a:visited {
 a:hover, a:active {
     color: #eee;
 }
+span {
+    background-color: aqua;
+    color: black;
+}
+
+div {
+    background-color: azure;
+    color: aquamarine;
+}
