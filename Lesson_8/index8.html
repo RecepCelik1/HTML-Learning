@@ -1,0 +1,118 @@
+                                            <!--Creating Tables-->
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>First Web Page</title>
+            <meta charset="UTF-8">
+            <meta name="author" content="Recep Celik">
+            <meta name="description" content="This page contains all the things I'm learning how to create as I learn HTML.">
+            <link rel="icon" href="html5-logo-750x440.png" type="image/x-icon">
+            <link rel="stylesheet" href="main8.css" type="text/css">
+        </head> 
+    <body>
+    <header>
+        <h1>This lesson is about to how to create tables in html5</h1>
+    </header>
+
+    <main>
+        <table id="timeSchedule">
+            <caption>My Daily Schedule</caption>
+
+            <thead>  <!--Tablolar için kullanılan header elementidir-->
+            <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+            </tr>
+            </thead>
+
+            <tbody> <!--Tabloların için kullanılan main elementidir-->
+            <tr>
+                <th scope="row">Morning</th>
+                <td>
+                    <time datetime="08:00">8am</time>
+                    -
+                    <time datetime="11:00">11am</time>
+                </td>
+                <td>Write Code</td>
+            </tr>
+            <tr>
+                <th scope="row">Break</th>
+                <td>
+                    <time datetime="11:00">11am</time>
+                    -
+                    <time datetime="12:00">1pm</time>
+                </td>
+                <td>Eat Lunch</td>
+            </tr>
+            <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                    <time datetime="12:00">12pm</time>
+                    -
+                    <time datetime="17:00">5pm</time>
+                </td>
+                <td>Study for dev. tutorials</td>
+            </tr>
+            <tr>
+                <td rowspan="2">All Other Times</td>  <!--**rowspan bize yan taraftan kaç tane enine kutucuğa bağlanacağını gösterir
+                                                          **bunun birde colspan versiyonu vardır buda bize aynı anda kaç tane dikine  kutucuğa bağlanacağını söyler.-->
+                <th scope="row">Evening</th>
+                <td>Free Time</td>
+            </tr>
+            <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+            </tr>
+            </tbody>
+
+            <tfoot> <!--Table elementi için kullanılan footer elementidir.-->
+                <tr>
+                    <td colspan="3">And that's my daily routines. <br>
+                         Just eat, code ..and recharge</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+
+    </footer>
+    </body>
+
+    </html>
+
+    <!--
+        *<table> elementi : kelime anlamı tablodur adından da anlaşılacağı üzere bu gün tablo oluşturmayı öğreneceğiz fakat bu elementi CSS olmadan efektif bir şekilde kullanamayız bu yüzden bu günlük biraz CSS kodu ekleyeceğiz. Bu yapıları spor istatiklerinde ve pek çok farlı şekilde sık sık görüyoruz.
+
+
+            <table id="tableAdı">  
+
+                <caption> My Daily Schedule </caption>    ==> tablomuza büyük bir başlık eklememizi sağlar. semantic için önemlidir     aynı zamanda.
+                <tr>
+                    <th>Time </th> ==> th: table header adı üstünde zaten, tablomuzun başlığıdır.
+                    <th> Activity </th> **tıpkı td elementinde olduğu gibi th dede birden fazla kutucuk oluşturulabilir.
+                </tr>
+
+                <tr>         ==> tr: table row anlamına gelir ve tablomuzda yeni bir satır oluşturmak için kullanılır.         
+                    <td> 
+
+                    </td>
+
+                    <td>     ==> td: table data anlamına gelir yukarıda oluşturduğumuz yeni satıra datalarımızı girebilmemizi sağlar bir satıra istediğimiz kadar yeni data girebiliriz. Oluşturduğumuz her td kendi sütununu oluşturacak ve bir kutucuk içerisinde son kullanıcıya gözükecektir.(tabi CSS yardımı ile).
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                    </td>
+                </tr>
+
+            </table>
+
+        **table elementi yazıldığı bütün satırı etkilemez yani block line elementi gibi davranmaz sadece yazıldığı yerleri kaplar tıpkı span elementi gibi.
+
+        <th> elementlerimizin hangi tür (sütun mu satır mı) olduğunu tanımlamak için scope elementi kullanırız. 
+        *bunun için scope yerine id de kullanılabilir.
+    -->
