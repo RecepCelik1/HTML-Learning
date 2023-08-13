@@ -16,12 +16,12 @@
 
     <main>
         <table id="timeSchedule">
-            <caption>My Daily Schedule</caption>
-
+            
             <thead>  <!--Tablolar için kullanılan header elementidir-->
+                <caption>My Daily Schedule</caption>
             <tr>
                 <th scope="col">Time</th>
-                <th scope="col">Activity</th>
+                <th scope="col" colspan="2">Activity</th>
             </tr>
             </thead>
 
@@ -54,7 +54,7 @@
                 <td>Study for dev. tutorials</td>
             </tr>
             <tr>
-                <td rowspan="2">All Other Times</td>  <!--**rowspan bize yan taraftan kaç tane enine kutucuğa bağlanacağını gösterir
+                <th rowspan="2">All Other Times</th>  <!--**rowspan bize yan taraftan kaç tane enine kutucuğa bağlanacağını gösterir
                                                           **bunun birde colspan versiyonu vardır buda bize aynı anda kaç tane dikine  kutucuğa bağlanacağını söyler.-->
                 <th scope="row">Evening</th>
                 <td>Free Time</td>
