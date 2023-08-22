@@ -1,8 +1,9 @@
-html {
-    font-size: 22px
-}
-
 body {
     background-color: #333;
     color: whitesmoke;
+}
+
+.cat:hover{
+    width: 750;
+    height: 440;
 }
