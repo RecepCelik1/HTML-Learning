@@ -9,7 +9,7 @@
 
         <!--HTML% Input-->
         Name
-        <input type="text"/> <!--We created an input unit and we provide an input type "text"-->
+        <input type="text" autofocus/> <!--We created an input unit and we provide an input type "text"-->
 
         <br><br>
 
@@ -31,7 +31,7 @@
 
         Gender <br><br>
         <label for="male">Male</label> 
-        <input type="radio" name="gender" id="male" value="male"> &nbsp; <!--Radio type you can choose only one option-->
+        <input type="radio" name="gender" id="male" value="male" checked> &nbsp; <!--Radio type you can choose only one option-->
                                                                          <!--but to do this all radios have same name=""-->
         <label for="female">Female</label>                              
         <input type="radio" name="gender" id="female" value="female"> <br><br>
@@ -39,7 +39,7 @@
 
         Hobbies <br>
         
-        <input type="checkbox" name="tech" id="tech">
+        <input type="checkbox" name="tech" id="tech" checked>
         <label for="tech">Technology</label> <br>
         <input type="checkbox" name="music" id="music">       <!--It's similars to radio but this you can choose multiple option-->
         <label for="music">Music</label> <br>
@@ -47,7 +47,16 @@
         <label for="art">Art</label> 
 
 
-        
+        Degree <br><br>
+        <select name="degree" id="degree">
+            <option value="bechalor">Bechalor</option>
+            <option value="msc" selected>Postgraduate</option> 
+            <option value="phd">Doctorate</option> 
+        </select>
+
+        <br><br>
+
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Send me a massage"></textarea>
 
 
         <br><br>
